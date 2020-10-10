@@ -1,6 +1,12 @@
 language: python
 sudo: false
+env:
+  global:
+    - JACEK=GACEK
 python:
 - 2.7
 - 3.4
-script: py.test -v
+- 3.7
+script: 
+  - echo $JACEK
+  - py.test -v
